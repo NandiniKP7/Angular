@@ -9,11 +9,14 @@
     <p>Settings</p>
   </nav>
   <main class="main">
-    <h1>Welcome to learn buddy</h1>
+    <h1>Welcome back, {{getGreeting()}} {{username}}!</h1>
+    <h1>Today is {{formattedDate}}</h1>
+    <h1>You have finished {{currentTopic}} of {{totalTopics}} ({{getProgress()}}%) </h1>
+    <h1> You are {{getStreakdiff() }} from a {{totalStreakDays}}-day streak!</h1>
+    <h1>You studied {{getTimeText()}} today</h1>
     <div class="box">
-      <div>Topics:2</div>
-      <div>Done:2</div>
-      <div>Streak:2</div>
+      <div>Topics:{{currentTopic}}</div>
+      <div>Done:{{currentTopic}}</div>
     </div>
   </main>
 </div>
