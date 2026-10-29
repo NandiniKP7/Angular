@@ -1,28 +1,12 @@
-.header {
-  background: lightseagreen;
-  color: white;
-  padding: 16px;
-  font-size: 45px;
-}
+
 .layout {
   display: flex;
 }
-.sidebar {
-  background-color: lightgoldenrodyellow;
-  font-size: 24px;
-  width: 200px;
-}
-.sidebar p {
-  cursor: pointer;
-}
+
 .main {
   flex: 1;
 }
-.footer {
-  background-color: lightgray;
-  padding: 16px;
-  font-size: 20px;
-}
+
 .box {
   display: flex;
   gap: 16px;

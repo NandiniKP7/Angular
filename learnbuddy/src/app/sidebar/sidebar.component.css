@@ -1,0 +1,8 @@
+.sidebar {
+  background-color: lightgoldenrodyellow;
+  font-size: 24px;
+  width: 200px;
+}
+.sidebar p {
+  cursor: pointer;
+}

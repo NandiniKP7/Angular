@@ -1,13 +1,6 @@
-<header class="header">Learn Buddy</header>
+<app-header></app-header>
 <div class="layout">
-  <nav class="sidebar">
-    <p>Dashboard</p>
-    <p>Topics</p>
-    <p>Diary</p>
-    <p>Calendar</p>
-    <p>Progress</p>
-    <p>Settings</p>
-  </nav>
+  <lb-sidebar></lb-sidebar>
   <main class="main">
     <h1>Welcome back, {{getGreeting()}} {{username}}!</h1>
     <h1>Today is {{formattedDate}}</h1>
@@ -20,5 +13,5 @@
     </div>
   </main>
 </div>
+<app-footer></app-footer>
 
-<footer class="footer">Learn Buddy: Built by Nandini</footer>
