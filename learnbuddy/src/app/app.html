@@ -2,16 +2,10 @@
 <div class="layout">
   <lb-sidebar></lb-sidebar>
   <main class="main">
-    <h1>Welcome back, {{getGreeting()}} {{username}}!</h1>
-    <h1>Today is {{formattedDate}}</h1>
-    <h1>You have finished {{currentTopic}} of {{totalTopics}} ({{getProgress()}}%) </h1>
-    <h1> You are {{getStreakdiff() }} from a {{totalStreakDays}}-day streak!</h1>
-    <h1>You studied {{getTimeText()}} today</h1>
-    <div class="box">
-      <div>Topics:{{currentTopic}}</div>
-      <div>Done:{{currentTopic}}</div>
-    </div>
+    <h1>Welcome back, {{ getGreeting() }} {{ username }}!</h1>
+    <h1>Today is {{ formattedDate }}</h1>
+    <app-dashboard></app-dashboard>
+    <div class="box"></div>
   </main>
 </div>
 <app-footer></app-footer>
-

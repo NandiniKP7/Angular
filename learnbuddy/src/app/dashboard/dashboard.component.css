@@ -1,0 +1,5 @@
+.panels {
+  display: grid; /*display: grid turns the container into a grid.*/
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr)); /*means "as many columns as fit, each at least 220px wide".*/
+  gap: 16px;
+}
