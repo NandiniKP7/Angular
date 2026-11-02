@@ -1,0 +1,10 @@
+img {
+  width: 60px;
+  height: 60px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 12px;
+}
