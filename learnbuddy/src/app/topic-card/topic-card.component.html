@@ -1,9 +1,18 @@
-
+<section [class.done]="getStatus()==='done'"
+[class.in-progress]="getStatus() === 'in-progress'"
+  [class.locked]="getStatus() === 'locked'"
+  >
 <div class="grid">
 <img [src]="iconUrl" alt="book"/>
-<h1>{{title}}</h1>
+<h1 [style.font-size.px]="titleSize">{{title}}</h1>
 </div>
 <button [disabled]="isLocked">Start</button>
 <p [title]="hint">{{getStatus()}}</p>
 <input [placeholder]="text"/>
-
+<div class="bar">
+  <div [style.width.%]="progress"
+       [style.background]="progress == 100 ? 'green' : 'teal'">
+    Progress Bar
+  </div>
+</div>
+</section>

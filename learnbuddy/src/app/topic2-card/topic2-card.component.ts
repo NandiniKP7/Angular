@@ -9,5 +9,6 @@ import { Component } from '@angular/core';
 export class Topic2CardComponent {
   isDisabled:boolean=false
   title:string="Property Binding"
+  status:string="review"
 }
 

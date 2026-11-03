@@ -1,4 +1,9 @@
-
-
-<p>{{title}}</p>
-<button [disabled]="isDisabled">Start</button>
+<section
+  [class.done]="status === 'done'"
+  [class.in-progress]="status === 'in-progress'"
+  [class.locked]="status === 'locked'"
+  [class.review]="status === 'review'"
+>
+  <p>{{ title }}</p>
+  <button [disabled]="isDisabled">Start</button>
+</section>

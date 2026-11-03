@@ -1,0 +1,8 @@
+<section
+  [class.done]="status === 'done'"
+  [class.in-progress]="status === 'in-progress'"
+  [class.locked]="status === 'locked'"
+>
+  <p>{{ title }}</p>
+  <button [disabled]="isDisabled">Start</button>
+</section>

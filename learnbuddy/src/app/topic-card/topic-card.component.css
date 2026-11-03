@@ -8,3 +8,11 @@ img {
   align-items: center;
   gap: 12px;
 }
+.done { background: green; }
+.in-progress{ background: yellow;}
+.locked{background: red;}
+.bar >div{
+  width: 100%;
+  height: 20px;
+  background: lightgray;
+}

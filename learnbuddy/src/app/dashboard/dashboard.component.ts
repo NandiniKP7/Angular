@@ -5,10 +5,11 @@ import { ProgressPannelComponent } from '../progress-pannel/progress-pannel.comp
 import { FocusPannelComponent } from '../focus-pannel/focus-pannel.component';
 import { TopicCardComponent } from '../topic-card/topic-card.component';
 import { Topic2CardComponent } from '../topic2-card/topic2-card.component';
+import { Topic3CardComponent } from '../topic3-card/topic3-card.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [TodayPannelComponent, StreakPannelComponent, ProgressPannelComponent, FocusPannelComponent,TopicCardComponent,Topic2CardComponent],
+  imports: [TodayPannelComponent, StreakPannelComponent, ProgressPannelComponent, FocusPannelComponent,TopicCardComponent,Topic2CardComponent,Topic3CardComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })

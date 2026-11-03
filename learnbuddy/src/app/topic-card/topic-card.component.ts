@@ -8,15 +8,26 @@ import { Component } from '@angular/core';
 })
 export class TopicCardComponent {
   title: string = 'Components';
+  titleSize:number=22;
   isLocked: boolean = true;
+  progress:number=50
   iconUrl: string = 'book.png';
   hint: string = 'Finish earlier topics to unlock';
   text:string="Add a note..."
   getStatus() {
-    if (this.isLocked === false) {
-      return 'Ready for Start';
-    } else {
-      return 'Locked Topic';
+    if(this.progress==100)
+    {
+      return 'done'
+    }
+    else if(this.progress==0)
+    {
+      return 'locked'
+    }
+    else if(this.progress!=0 && this.progress<100){
+      return'in-progress'
+    }
+    else{
+      return'review'
     }
   }
 }

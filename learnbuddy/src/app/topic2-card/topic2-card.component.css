@@ -1,0 +1,4 @@
+.done { background: green; }
+.in-progress{ background: yellow;}
+.locked{background: red;}
+.review{background:lemonchiffon}
